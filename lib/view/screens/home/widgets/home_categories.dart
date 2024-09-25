@@ -1,9 +1,11 @@
+import 'package:ecommerce/view/screens/sub_category/sub_categories.dart';
 import 'package:ecommerce/view/utils/constants/colors.dart';
 import 'package:ecommerce/view/utils/constants/image_strings.dart';
 import 'package:ecommerce/view/utils/constants/sizes.dart';
 import 'package:ecommerce/view/widgets/image_text_widgets/categories_tile.dart';
 import 'package:ecommerce/view/widgets/texts/section_heading.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeCategories extends StatelessWidget {
   const HomeCategories({
@@ -28,11 +30,11 @@ class HomeCategories extends StatelessWidget {
               itemCount: 10,
               shrinkWrap: true,
               scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) {
+              itemBuilder: (_, index) {
                 return CategoryTile(
                   image: ImageStrings.shoeIcon,
                   title: 'shoes',
-                  onTap: () {},
+                  onTap: () => Get.to(() => const SubCategoriesScreen()),
                 );
               },
             ),

@@ -3,8 +3,12 @@ import 'package:flutter/material.dart';
 class CustomColors {
   static const Color black = Colors.black;
   static const Color white = Colors.white;
-  static const Color grey = Colors.grey;
+  static const Color grey = Color(0xFFBABABA);
   static const Color amber = Colors.amber;
+  static const Color red = Colors.red;
+  static const Color blue = Colors.blue;
+  static const Color transparent = Colors.transparent;
+  static const Color green = Colors.green;
   static const Color darkGrey = Color(0xff939393);
 
   //! App theme colors

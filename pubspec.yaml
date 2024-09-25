@@ -13,7 +13,6 @@ dependencies:
     sdk: flutter
 
 
-  iconsax: ^0.0.8 
   cupertino_icons: ^1.0.6
   get: ^4.6.6
   get_storage: ^2.1.1
@@ -25,6 +24,8 @@ dependencies:
   smooth_page_indicator: ^1.2.0+3
   animated_text_kit: ^4.2.2
   carousel_slider: ^5.0.0
+  flutter_rating_bar: ^4.0.1
+  readmore: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -46,6 +47,7 @@ flutter:
     - assets/lotties/
     - assets/icons/categories/
     - assets/icons/brands/
+    - assets/icons/payment_methods/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

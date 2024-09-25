@@ -1,3 +1,4 @@
+import 'package:ecommerce/view/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextTheme {
@@ -6,57 +7,57 @@ class CustomTextTheme {
     headlineLarge: const TextStyle().copyWith(
       fontSize: 32,
       fontWeight: FontWeight.bold,
-      color: Colors.black,
+      color: CustomColors.dark,
     ),
     headlineMedium: const TextStyle().copyWith(
       fontSize: 24,
       fontWeight: FontWeight.w600,
-      color: Colors.black,
+      color: CustomColors.dark,
     ),
     headlineSmall: const TextStyle().copyWith(
       fontSize: 18,
       fontWeight: FontWeight.w600,
-      color: Colors.black,
+      color: CustomColors.dark,
     ),
     titleLarge: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w500,
-      color: Colors.black,
+      color: CustomColors.dark,
     ),
     titleMedium: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w500,
-      color: Colors.black,
+      color: CustomColors.dark,
     ),
     titleSmall: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w400,
-      color: Colors.black,
+      color: CustomColors.dark,
     ),
     bodyLarge: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.w500,
-      color: Colors.black,
+      color: CustomColors.dark,
     ),
     bodyMedium: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.normal,
-      color: Colors.black,
+      color: CustomColors.dark,
     ),
     bodySmall: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.w500,
-      color: Colors.black.withOpacity(0.5),
+      color: CustomColors.dark.withOpacity(0.5),
     ),
     labelMedium: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.normal,
-      color: Colors.black,
+      color: CustomColors.black,
     ),
     labelSmall: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.normal,
-      color: Colors.black.withOpacity(0.5),
+      color: CustomColors.black.withOpacity(0.5),
     ),
   );
   //!Dark Theme
@@ -64,57 +65,57 @@ class CustomTextTheme {
     headlineLarge: const TextStyle().copyWith(
       fontSize: 32,
       fontWeight: FontWeight.bold,
-      color: Colors.white,
+      color: CustomColors.light,
     ),
     headlineMedium: const TextStyle().copyWith(
       fontSize: 24,
       fontWeight: FontWeight.w600,
-      color: Colors.white,
+      color: CustomColors.light,
     ),
     headlineSmall: const TextStyle().copyWith(
       fontSize: 18,
       fontWeight: FontWeight.w600,
-      color: Colors.white,
+      color: CustomColors.light,
     ),
     titleLarge: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w500,
-      color: Colors.white,
+      color: CustomColors.light,
     ),
     titleMedium: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w500,
-      color: Colors.white,
+      color: CustomColors.light,
     ),
     titleSmall: const TextStyle().copyWith(
       fontSize: 16,
       fontWeight: FontWeight.w400,
-      color: Colors.white,
+      color: CustomColors.light,
     ),
     bodyLarge: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.w500,
-      color: Colors.white,
+      color: CustomColors.light,
     ),
     bodyMedium: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.normal,
-      color: Colors.white,
+      color: CustomColors.light,
     ),
     bodySmall: const TextStyle().copyWith(
       fontSize: 14,
       fontWeight: FontWeight.w500,
-      color: Colors.white.withOpacity(0.5),
+      color: CustomColors.light.withOpacity(0.5),
     ),
     labelMedium: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.normal,
-      color: Colors.white,
+      color: CustomColors.light,
     ),
     labelSmall: const TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.normal,
-      color: Colors.white.withOpacity(0.5),
+      color: CustomColors.light.withOpacity(0.5),
     ),
   );
 }

@@ -1,25 +1,38 @@
-import 'package:ecommerce/view/utils/constants/colors.dart';
-import 'package:ecommerce/view/utils/helpers/helper_function.dart';
+import 'package:ecommerce/view/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class CircularIcon extends StatelessWidget {
+  final double? height, width, size;
+  final IconData icon;
+  final Color? color, backgroundColor;
+  final VoidCallback? onPressed;
   const CircularIcon({
     super.key,
+    this.height,
+    this.width,
+    this.size = Sizes.lg,
+    required this.icon,
+    this.color,
+    this.backgroundColor,
+    this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
-    final dark = HelperFunctions.isDarkMode(context);
-
     return Container(
+      height: height,
+      width: width,
       decoration: BoxDecoration(
-        color: dark
-            ? CustomColors.black.withOpacity(0.8)
-            : CustomColors.white.withOpacity(0.8),
+        color: backgroundColor ?? Colors.transparent,
+        borderRadius: BorderRadius.circular(100),
       ),
-      child: IconButton(
-        onPressed: () {},
-        icon: const Icon(Icons.favorite_border),
+      child: GestureDetector(
+        onTap: onPressed,
+        child: Icon(
+          icon,
+          color: color,
+          size: size,
+        ),
       ),
     );
   }

@@ -1,4 +1,4 @@
-import 'package:ecommerce/view/screens/splash_screen/splash_screen.dart';
+import 'package:ecommerce/view/personalisation/splash_screen/splash_screen.dart';
 import 'package:ecommerce/view/utils/constants/inti_controllers.dart';
 import 'package:ecommerce/view/utils/theme/theme.dart';
 import 'package:flutter/material.dart';

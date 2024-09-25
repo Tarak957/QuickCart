@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 
 class CartIcon extends StatelessWidget {
   final VoidCallback onPressed;
-  final Color iconColor;
+  final Color? iconColor, badgeColor, textColor;
   const CartIcon({
     super.key,
     required this.onPressed,
-    required this.iconColor,
+    this.iconColor = Colors.white,
+    this.badgeColor = Colors.red,
+    this.textColor = Colors.white,
   });
 
   @override
@@ -15,7 +17,11 @@ class CartIcon extends StatelessWidget {
       onPressed: onPressed,
       icon: Badge(
         isLabelVisible: true,
-        label: const Text('99'),
+        backgroundColor: badgeColor,
+        label: Text(
+          '99',
+          style: TextStyle(color: textColor),
+        ),
         child: Icon(
           Icons.shopping_bag_outlined,
           color: iconColor,

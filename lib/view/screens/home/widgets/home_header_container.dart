@@ -5,9 +5,11 @@ import 'package:flutter/material.dart';
 
 class HomeHeaderContainer extends StatelessWidget {
   final Widget child;
+  final double height;
   const HomeHeaderContainer({
     super.key,
     required this.child,
+    this.height = 400,
   });
 
   @override
@@ -17,7 +19,7 @@ class HomeHeaderContainer extends StatelessWidget {
         color: CustomColors.primaryPurple,
         padding: const EdgeInsets.all(0),
         child: SizedBox(
-          height: 400,
+          height: height,
           child: Stack(
             children: [
               Positioned(

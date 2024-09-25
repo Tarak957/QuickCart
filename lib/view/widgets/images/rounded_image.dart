@@ -1,4 +1,3 @@
-import 'package:ecommerce/view/utils/constants/colors.dart';
 import 'package:ecommerce/view/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +6,7 @@ class RoundedImage extends StatelessWidget {
   final String image;
   final bool applyImageradius;
   final BoxBorder? border;
-  final Color backgroundColor;
+  final Color? backgroundColor, imageColor;
   final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
   final bool isNetworkImage;
@@ -21,11 +20,12 @@ class RoundedImage extends StatelessWidget {
     required this.image,
     this.applyImageradius = true,
     this.border,
-    this.backgroundColor = CustomColors.white,
+    this.backgroundColor,
     this.fit = BoxFit.contain,
     this.isNetworkImage = false,
     this.onTap,
     this.borderRadius = Sizes.md,
+    this.imageColor,
   });
 
   @override
@@ -46,6 +46,7 @@ class RoundedImage extends StatelessWidget {
               ? BorderRadius.circular(borderRadius)
               : BorderRadius.zero,
           child: Image(
+            color: imageColor,
             image: isNetworkImage
                 ? NetworkImage(image)
                 : AssetImage(image) as ImageProvider,
