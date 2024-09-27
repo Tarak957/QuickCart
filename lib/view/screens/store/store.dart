@@ -1,3 +1,4 @@
+import 'package:ecommerce/view/screens/brands/all_brands.dart';
 import 'package:ecommerce/view/screens/home/widgets/cart_icon.dart';
 import 'package:ecommerce/view/screens/home/widgets/search_container.dart';
 import 'package:ecommerce/view/screens/store/widgets/category_tab.dart';
@@ -10,6 +11,7 @@ import 'package:ecommerce/view/widgets/appbar/tabbar.dart';
 import 'package:ecommerce/view/widgets/layouts/grid_layout.dart';
 import 'package:ecommerce/view/widgets/texts/section_heading.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -48,7 +50,7 @@ class StoreScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: Sizes.md),
                     physics: const NeverScrollableScrollPhysics(),
                     children: [
-                      const SizedBox(height: Sizes.spaceBtwItems), //!searchbar
+                      const SizedBox(height: Sizes.spaceBtwItems),
                       const SearchContainer(
                         hintText: 'Search in store',
                         padding: EdgeInsets.zero,
@@ -58,7 +60,7 @@ class StoreScreen extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(),
                         child: SectionHeading(
                           title: 'Featured Brands',
-                          onPressed: () {},
+                          onPressed: () => Get.to(() => const AllBrands()),
                         ),
                       ),
                       const SizedBox(height: Sizes.spaceBtwItems),

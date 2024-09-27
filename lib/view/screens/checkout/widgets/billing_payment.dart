@@ -2,7 +2,7 @@ import 'package:ecommerce/view/utils/constants/colors.dart';
 import 'package:ecommerce/view/utils/constants/image_strings.dart';
 import 'package:ecommerce/view/utils/constants/sizes.dart';
 import 'package:ecommerce/view/utils/helpers/helper_function.dart';
-import 'package:ecommerce/view/widgets/products/product_cards/rounded_container.dart';
+import 'package:ecommerce/view/widgets/containers/rounded_container.dart';
 import 'package:ecommerce/view/widgets/texts/section_heading.dart';
 import 'package:flutter/material.dart';
 

@@ -2,7 +2,7 @@ import 'package:ecommerce/view/utils/constants/colors.dart';
 import 'package:ecommerce/view/utils/constants/sizes.dart';
 import 'package:ecommerce/view/utils/helpers/helper_function.dart';
 import 'package:ecommerce/view/widgets/chips/choice_chip.dart';
-import 'package:ecommerce/view/widgets/products/product_cards/rounded_container.dart';
+import 'package:ecommerce/view/widgets/containers/rounded_container.dart';
 import 'package:ecommerce/view/widgets/texts/product_price_text.dart';
 import 'package:ecommerce/view/widgets/texts/product_title_text.dart';
 import 'package:ecommerce/view/widgets/texts/section_heading.dart';

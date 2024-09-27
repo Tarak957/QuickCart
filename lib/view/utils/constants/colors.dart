@@ -10,6 +10,7 @@ class CustomColors {
   static const Color transparent = Colors.transparent;
   static const Color green = Colors.green;
   static const Color darkGrey = Color(0xff939393);
+  static const Color lightContainer = Color(0xfff6f6f6);
 
   //! App theme colors
   // static Color primaryPurple = const Color(0xff611c90);

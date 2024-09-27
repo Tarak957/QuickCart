@@ -11,8 +11,9 @@ class ProductReviews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(
-        title: Text('Reviews & Ratings'),
+      appBar: CustomAppBar(
+        title: Text('Reviews & Ratings',
+            style: Theme.of(context).textTheme.headlineMedium),
         showBackArrow: true,
       ),
       body: SingleChildScrollView(

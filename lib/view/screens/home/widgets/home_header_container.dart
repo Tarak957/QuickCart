@@ -1,4 +1,4 @@
-import 'package:ecommerce/view/widgets/circular_container/circular_container.dart';
+import 'package:ecommerce/view/widgets/containers/circular_container.dart';
 import 'package:ecommerce/view/widgets/curved_edges/curved_edges_widget.dart';
 import 'package:ecommerce/view/utils/constants/colors.dart';
 import 'package:flutter/material.dart';

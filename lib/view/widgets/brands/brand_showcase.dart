@@ -2,7 +2,7 @@ import 'package:ecommerce/view/utils/constants/colors.dart';
 import 'package:ecommerce/view/utils/constants/sizes.dart';
 import 'package:ecommerce/view/utils/helpers/helper_function.dart';
 import 'package:ecommerce/view/widgets/brands/brand_card.dart';
-import 'package:ecommerce/view/widgets/products/product_cards/rounded_container.dart';
+import 'package:ecommerce/view/widgets/containers/rounded_container.dart';
 import 'package:flutter/material.dart';
 
 class BrandShowCase extends StatelessWidget {

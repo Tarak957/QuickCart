@@ -1,3 +1,4 @@
+import 'package:ecommerce/view/screens/all_products/all_products.dart';
 import 'package:ecommerce/view/widgets/layouts/grid_layout.dart';
 import 'package:ecommerce/view/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce/view/screens/home/widgets/home_categories.dart';
@@ -10,6 +11,7 @@ import 'package:ecommerce/view/utils/constants/text_strings.dart';
 import 'package:ecommerce/view/widgets/products/product_cards/vertical_product_card.dart';
 import 'package:ecommerce/view/widgets/texts/section_heading.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -43,7 +45,7 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: Sizes.md),
               child: SectionHeading(
                 title: 'Popular Products',
-                onPressed: () {},
+                onPressed: () => Get.to(() => const AllProducts()),
               ),
             ),
             const SizedBox(height: Sizes.spaceBtwItems),

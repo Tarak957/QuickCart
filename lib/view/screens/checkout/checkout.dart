@@ -9,7 +9,7 @@ import 'package:ecommerce/view/utils/constants/sizes.dart';
 import 'package:ecommerce/view/utils/helpers/helper_function.dart';
 import 'package:ecommerce/view/widgets/appbar/appbar.dart';
 import 'package:ecommerce/view/widgets/products/cart/coupon_code.dart';
-import 'package:ecommerce/view/widgets/products/product_cards/rounded_container.dart';
+import 'package:ecommerce/view/widgets/containers/rounded_container.dart';
 import 'package:ecommerce/view/widgets/success_screen/success_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
